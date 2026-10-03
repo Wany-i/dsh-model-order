@@ -1,0 +1,9 @@
+# Dependencies are installed from the published official packages.
+node_modules/
+
+# lib/ is intentionally NOT ignored: the built artifacts are committed so a
+# GitHub install (`dsh plugin add github:…`) needs no build step on the user's
+# machine. `npm run verify` regenerates them.
+
+*.log
+.DS_Store

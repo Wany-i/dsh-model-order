@@ -1,0 +1,9 @@
+# dsh-model-order — bundle layer for the dsh profile loader.
+#
+# The host half (lib/index.js) has no behaviour of its own: it exists so the
+# entry is a real plugin row. The browser half (lib/client.js) is declared
+# through package.json's `dsh.client` manifest (platform: web) and is loaded
+# by the web client, not from this patch.
+- insert:
+    - id: model-order
+      name: 'dsh-model-order'
