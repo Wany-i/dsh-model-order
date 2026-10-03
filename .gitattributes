@@ -1,0 +1,19 @@
+# Normalize every text file to LF in the repository, whatever the contributor's OS.
+* text=auto eol=lf
+
+# The committed build artifacts and every source/config file are text; naming them
+# keeps them byte-identical across platforms so `lib/` diffs stay meaningful.
+*.js   text eol=lf
+*.map  text eol=lf
+*.mjs  text eol=lf
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.css  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.md   text eol=lf
+
+# Binary assets, should any be added later.
+*.png binary
+*.ico binary
+*.jpg binary
